@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BITRADE d.o.o. - Profesionalne poslovne storitve v Trzinu">
+    <title>BITRADE d.o.o. | Poslovne Storitve</title>
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            /* Primary Colors */
+            --primary-color: #d8a7b1; /* Soft Pink */
+            --secondary-color: #b67a92; /* Mauve */
+            
+            /* Accent Colors */
+            --accent-color-1: #ffedf0; /* Light Pink */
+            --accent-color-2: #593c55; /* Deep Plum */
+            
+            /* Neutral Colors */
+            --background-color: #f9f9f9; /* Light Grayish White */
+            --text-color: #333333; /* Charcoal Black */
+            --secondary-text-color: #7d7d7d; /* Cool Gray */
+            --border-color: #e0e0e0; /* Soft Gray */
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text-color);
+            line-height: 1.6;
+            background-color: var(--background-color);
+        }
+
+        .hero {
+            background: linear-gradient(135deg, var(--accent-color-1), #fff);
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            padding-top: 80px;
+        }
+
+        .service-card {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+            border: 1px solid var(--border-color);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--secondary-color);
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--secondary-color);
+            border-color: var(--accent-color-2);
+        }
+
+        .testimonial-card {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            border: 1px solid var(--border-color);
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                min-height: auto;
+                padding-top: 100px;
+                padding-bottom: 40px;
+            }
+
+            .hero .row {
+                flex-direction: column-reverse;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#">BITRADE d.o.o.</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#services">Storitve</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">O nas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Reference</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold mb-3">Profesionalne Poslovne Storitve</h1>
+                    <p class="lead mb-4">Zanesljive in inovativne poslovne rešitve za vaše podjetje v Trzinu in okolici.</p>
+                    <a href="#contact" class="btn btn-primary btn-lg">Povprašajte nas</a>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <img src="hero-image.png" alt="BITRADE d.o.o. poslovne storitve" class="img-fluid rounded-circle shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Naše Storitve</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="service-card text-center">
+                        <div class="mb-3" style="height: 48px;">
+                            <svg class="service-icon" style="width: 48px; height: 48px;" viewBox="0 0 24 24">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z" fill="#d8a7b1"/>
+                                <path d="M2 17l10 5 10-5M2 12l10 5 10-5" fill="#b67a92"/>
+                            </svg>
+                        </div>
+                        <h3>Poslovno Svetovanje</h3>
+                        <p>Strateške smernice za rast in optimizacijo vašega podjetja.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card text-center">
+                        <div class="mb-3" style="height: 48px;">
+                            <svg class="service-icon" style="width: 48px; height: 48px;" viewBox="0 0 24 24">
+                                <path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z" fill="#d8a7b1"/>
+                            </svg>
+                        </div>
+                        <h3>Finančne Analize</h3>
+                        <p>Natančne finančne analize za informirano poslovno odločanje.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card text-center">
+                        <div class="mb-3" style="height: 48px;">
+                            <svg class="service-icon" style="width: 48px; height: 48px;" viewBox="0 0 24 24">
+                                <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14h-2v-4h2v4zm0-6h-2V7h2v4z" fill="#b67a92"/>
+                            </svg>
+                        </div>
+                        <h3>Projektni Management</h3>
+                        <p>Celovito upravljanje projektov od začetka do uspešne realizacije.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-5 bg-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <img src="about-image.png" alt="BITRADE d.o.o. ekipa" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="mb-4">O Podjetju BITRADE d.o.o.</h2>
+                    <p>Smo strokovno podjetje s sedežem v Trzinu, ki ponuja celovite poslovne storitve. Naše poslanstvo je pomagati podjetjem doseči njihove strateške cilje.</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-check text-primary me-2"></i>Strokoven in zaupanja vreden pristop</li>
+                        <li><i class="fas fa-check text-primary me-2"></i>Individualne rešitve za vsako podjetje</li>
+                        <li><i class="fas fa-check text-primary me-2"></i>Večletne izkušnje v poslovnem svetovalnem sektorju</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Naše Reference</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <p>"BITRADE nam je pomagal optimizirati poslovne procese."</p>
+                        <footer class="mt-3 text-muted">- Podjetje A</footer>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <p>"Njihove finančne analize so ključno prispevale k našemu uspehu."</p>
+                        <footer class="mt-3 text-muted">- Podjetje B</footer>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <p>"Profesionalen in zaupanja vreden poslovni partner."</p>
+                        <footer class="mt-3 text-muted">- Podjetje C</footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2>Kontaktirajte nas</h2>
+                    <p>Pošljite nam povpraševanje za poslovne storitve.</p>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt me-2"></i>Blatnica 12, 1236 Trzin</p>
+                        <p><i class="fas fa-envelope me-2"></i>info@bitrade.si</p>
+                        <p><i class="fas fa-phone me-2"></i>+386 (0)40 123 456</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <a href="mailto:info@bitrade.si" class="btn btn-primary btn-lg">Pošljite sporočilo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 BITRADE d.o.o. - Vse pravice pridržane</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
